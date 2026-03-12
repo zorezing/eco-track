@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoTrack | Green Workspaces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="leaf-fog" aria-hidden="true"></div>
+    <div class="leaf-shape leaf-a" aria-hidden="true"></div>
+    <div class="leaf-shape leaf-b" aria-hidden="true"></div>
+
+    <main class="site-frame">
+      <header class="masthead">
+        <div class="masthead-meta">
+          <p>EcoTrack Studio</p>
+          <p>Climate-first spaces</p>
+          <p>Edition 2026</p>
+        </div>
+
+        <div class="hero-row">
+          <div class="hero-copy">
+            <p class="hero-kicker">Green design dashboard</p>
+            <h1>Build Better Habits in Every Space.</h1>
+            <p class="hero-sub">
+              Track source-backed environmental indicators, read climate briefings, and estimate personal carbon impact with clearer context.
+            </p>
+          </div>
+          <aside class="hero-card" aria-label="Quick action">
+            <div class="plant-preview" aria-hidden="true"></div>
+            <p class="hero-card-title">Open the practical guide for habits, context, and next steps.</p>
+            <button type="button" class="hero-card-btn">Open climate guide</button>
+          </aside>
+        </div>
+      </header>
+
+      <section id="dashboardView" class="view"></section>
+      <section id="detailView" class="view hidden"></section>
+      <section id="newsView" class="view hidden"></section>
+      <section id="calculatorView" class="view hidden"></section>
+      <section id="tipsView" class="view hidden"></section>
+      <section id="sourcesView" class="view hidden"></section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Primary">
+      <button class="nav-item active" data-view="dashboard" type="button">Home</button>
+      <button class="nav-item" data-view="news" type="button">News</button>
+      <button class="nav-item" data-view="calculator" type="button">Calculator</button>
+      <button class="nav-item" data-view="tips" type="button">Tips</button>
+      <button class="nav-item" data-view="sources" type="button">Sources</button>
+    </nav>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
